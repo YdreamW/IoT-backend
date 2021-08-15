@@ -5,8 +5,5 @@ export default (app: Application) => {
 
   router.get('/', controller.home.index);
 
-
-
-  app.emqtt.route('testapp',app.mqtt.controller.home.index);
-
+  app.emqtt.route('testapp', app.mqtt.controller.home.index);
 };
